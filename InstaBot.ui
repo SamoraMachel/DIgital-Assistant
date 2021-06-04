@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bot</class>
+ <widget class="QDialog" name="Bot">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>489</width>
+    <height>176</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>489</width>
+    <height>176</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>489</width>
+    <height>176</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe MDL2 Assets</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Bot</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+background-color: qlineargradient(spread:pad, x1:0.529, y1:0.232, x2:0.602273, y2:0.972, stop:0 rgba(185, 0, 117, 255), stop:0.994318 rgba(255, 23, 23, 255));
+}
+
+QLabel{
+font-size: 12px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>62</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Maximum</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>37</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Likes</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>100</y>
+     <width>48</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Disallow</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="maximum">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>100</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Maximum people to follow</string>
+   </property>
+   <property name="placeholderText">
+    <string>100</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="likes">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>60</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>maximum like to give per person</string>
+   </property>
+   <property name="placeholderText">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="disallow">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>100</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>prevent the bot to follow people past a certain number of followers</string>
+   </property>
+   <property name="placeholderText">
+    <string>1000</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>140</y>
+     <width>75</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#start{
+color: white;
+background-color: qlineargradient(spread:pad, x1:0.529727, y1:0.784, x2:0.534591, y2:0.097, stop:0 rgba(0, 85, 147, 255), stop:0.994318 rgba(0, 88, 133, 255));
+font-size: 14px;
+font-family: &quot;Comis Sans&quot;;
+border-radius: 13px;
+}
+
+#start::hover{
+background-color: qlineargradient(spread:pad, x1:0.602, y1:1, x2:0.551, y2:0.0175909, stop:0 rgba(0, 110, 178, 255), stop:0.994318 rgba(0, 255, 223, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+   <property name="icon">
+    <iconset resource="Icons/icons.qrc">
+     <normaloff>:/Icons/Instagram.png</normaloff>:/Icons/Instagram.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>17</width>
+     <height>17</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="wed_driver">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Location of the webdriver used to scrape</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>C:\\D..</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>13</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Web Driver</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>54</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Browser</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="browser">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="toolTip">
+    <string>enter the default Browser</string>
+   </property>
+   <property name="currentText">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="search">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>9</y>
+     <width>60</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#search{
+color: white;
+background-color: qlineargradient(spread:pad, x1:0.529727, y1:0.784, x2:0.534591, y2:0.097, stop:0 rgba(0, 85, 147, 255), stop:0.994318 rgba(0, 88, 133, 255));
+font-size: 13px;
+font-family: &quot;Comis Sans&quot;;
+border-radius: 10px;
+}
+
+#search::hover{
+background-color: qlineargradient(spread:pad, x1:0.602, y1:1, x2:0.551, y2:0.0175909, stop:0 rgba(0, 110, 178, 255), stop:0.994318 rgba(0, 255, 223, 255));
+}</string>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>16</width>
+     <height>16</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>wed_driver</tabstop>
+  <tabstop>search</tabstop>
+  <tabstop>browser</tabstop>
+  <tabstop>likes</tabstop>
+  <tabstop>disallow</tabstop>
+  <tabstop>maximum</tabstop>
+  <tabstop>start</tabstop>
+ </tabstops>
+ <resources>
+  <include location="Icons/icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>label</sender>
+   <signal>linkActivated(QString)</signal>
+   <receiver>maximum</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>90</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>110</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>label_3</sender>
+   <signal>linkActivated(QString)</signal>
+   <receiver>disallow</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

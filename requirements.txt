@@ -1,0 +1,7 @@
+wolframalpha==5.0.0
+wikipedia==1.4.0
+gTTS==2.2.2
+playsound==1.2.2
+selenium==3.141.0
+moviepy==1.0.3
+pytube==10.8.4

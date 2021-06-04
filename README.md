@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-    <title>Informational Sector</title>
-</head>
+
 <body style="background-color: rgba(243, 239, 239, 0.856);">
 
 # PyDA
